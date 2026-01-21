@@ -34,3 +34,19 @@ Instructions
 * When you activate your API it will be discovered in Engage and you can create product based on it
 
 * When Engage users discover the product and associated API, they can subscribe and register an application. Then when the user requests a credential, the client provisioning integration will trigger and the credentials sent to Engage for the user to use the OAuth 2.0 Fusion API
+
+  ![Imgur](https://imgur.com/VZ17n5G.png)
+  ![Imgur](https://imgur.com/icUelld.png)
+  ![Imgur](https://imgur.com/R0pibLM.png)
+  ![Imgur](https://imgur.com/v0k2Vct.png)
+  ![Imgur](https://imgur.com/glv3W1r.png)
+  ![Imgur](https://imgur.com/KuvnSfY.png)
+
+* You will see the new client in Keycloak
+  ![Imgur](https://imgur.com/lGC7I3l.png)
+  ![Imgur](https://imgur.com/QQX1a1l.png)
+  ![Imgur](https://imgur.com/Cjpqro0.png)
+
+* You will also see the client provisioning integration transaction in the Fusion Monitor
+  ![Imgur](https://imgur.com/xlVllYX.png)
+  ![Imgur](https://imgur.com/0PaqKnJ.png)
