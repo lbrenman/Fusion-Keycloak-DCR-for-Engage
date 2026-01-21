@@ -1,0 +1,36 @@
+# Amplify Fusion/Engage OAuth 2.0 Client Provisioning For Keycloak
+
+This Amplify Fusion project contains an integration and associated connector that handles Amplify Engage client provisioning (credential) requests and enables self service onboarding of Engage users for Fusion OAuth 2.0 secured API's. The integration leverages Keycloak's dynamic client registration (DCR) capabilities.
+
+You should have access to your Keycloak tenant and you should have Fusion integrated with Engage as described [here](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_marketplace/index.html).
+
+For testing you can reference these documents:
+* [Amplify Integration - Use PhaseTwo Managed Keycloak for OAuth API Authentication](https://gist.github.com/lbrenman/69317b109e0db85771ae29a2fab890c8)
+* [Keycloak Development Environment](https://github.com/lbrenman/keycloak-dev-codespace)
+
+Instructions
+* [Import](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_the_environments/index.html#export-or-import-a-project) the project zip file into your tenant
+
+* [Override](https://docs.axway.com/bundle/amplify_integration/page/docs/designer_module/designer_module_artifacts/connections/index.html#configure-an-override-connection) the Keycloak API connector in Manager and enter the appropriate values for your Keycloak tenant and service account client, namely your realm url, your realm token url and the client id and secret of a service account client
+  ![Imgur](https://imgur.com/W0AlWTy.png)
+  ![Imgur](https://imgur.com/DUAi6rJ.png)
+  ![Imgur](https://imgur.com/fBta2tm.png)
+  ![Imgur](https://imgur.com/qRdbj1D.png)
+
+* The service account client should have a realm-management -> manage-clients service account role added to it in order to create clients
+  ![Imgur](https://imgur.com/SoerZOj.png)
+  ![Imgur](https://imgur.com/SyINPA3.png)
+  ![Imgur](https://imgur.com/Kzhsbz8.png)
+  ![Imgur](https://imgur.com/YicvVTg.png)
+
+* Link the integration to your Identity Provider in Fusion -> Manager Identity Provider
+  ![Imgur](https://imgur.com/xngYFy7.png)
+
+* Now you can select OAuth 2.0 for any of your Fusion APIs and create a Governance Rule that uses the Identity Provider and activate your API
+
+  ![Imgur](https://imgur.com/QR4Q6ye.png)
+  ![Imgur](https://imgur.com/zftAmYW.png)
+
+* When you activate your API it will be discovered in Engage and you can create product based on it
+
+* When Engage users discover the product and associated API, they can subscribe and register an application. Then when the user requests a credential, the client provisioning integration will trigger and the credentials sent to Engage for the user to use the OAuth 2.0 Fusion API
