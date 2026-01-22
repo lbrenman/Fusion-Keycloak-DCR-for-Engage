@@ -39,6 +39,10 @@ Instructions
   ![Imgur](https://imgur.com/QR4Q6ye.png)
   ![Imgur](https://imgur.com/zftAmYW.png)
 
+* Since we'll be testing the OAuth 2.0 API from Engage, you'll need to configure CORS properly for your API as shown below:
+
+  ![Imgur](https://imgur.com/5VQ8KRQ.png)
+
 * When you activate your API it will be discovered in Engage and you can create product based on it
 
 * When Engage users discover the product and associated API, they can subscribe and register an application. Then when the user requests a credential, the client provisioning integration will trigger and the credentials sent to Engage for the user to use the OAuth 2.0 Fusion API
