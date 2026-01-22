@@ -6,6 +6,8 @@ The integration leverages Keycloak’s Dynamic Client Registration (DCR) capabil
 
 You should have access to your Keycloak tenant and you should have Fusion integrated with Engage as described [here](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_marketplace/index.html).
 
+You should also validate that you can call your API with Keycloak OAuth 2.0 from Postman using a manually created keycloak test client and that client id is added to a Fusion Test App in Manager.
+
 For testing you can reference these documents:
 * [Amplify Integration - Use PhaseTwo Managed Keycloak for OAuth API Authentication](https://gist.github.com/lbrenman/69317b109e0db85771ae29a2fab890c8)
 * [Keycloak Development Environment](https://github.com/lbrenman/keycloak-dev-codespace)
