@@ -1,6 +1,6 @@
 # Amplify Fusion/Engage OAuth 2.0 Client Provisioning For Keycloak
 
-This Amplify Fusion project contains an integration and associated connector that handle Amplify Engage client-provisioning requests. It enables self-service onboarding for Engage subscribers consuming OAuth 2.0-secured APIs managed by Fusion, allowing them to retrieve their OAuth 2.0 credentials without manual administrator involvement.
+This Amplify Fusion project contains an integration and associated connector that handle Amplify Engage credential provisioning requests. It enables self-service onboarding for Engage subscribers consuming OAuth 2.0-secured APIs managed by Fusion, allowing them to retrieve their OAuth 2.0 credentials without manual administrator involvement.
 
 The integration leverages Keycloak’s Dynamic Client Registration (DCR) capabilities to automatically create and configure OAuth clients at subscription time.
 
@@ -27,11 +27,11 @@ Instructions
   ![Imgur](https://i.imgur.com/YicvVTg.png)
 
 * Link the integration to your Identity Provider in Fusion -> Manager Identity Provider as follows:
-  * Open the Client Provisioning integration, `cred-prov-flow-keycloak` in the imported project
-  * Click the CLient Provision trigger artifact and select your Identity Provider and click Save
+  * Open the Credential Provisioning integration, `cred-prov-flow-keycloak` in the imported project
+  * Click the Credential Provision trigger artifact and select your Identity Provider and click Save
     ![Imgur](https://i.imgur.com/BTRpL7u.png)
     ![Imgur](https://i.imgur.com/zbSBI16.png)
-  * In Fusion Manager, Open the Idenity provider and select the Client Provisioning integration you just updated in the Link Integration picker and select the desired data plane and click Save
+  * In Fusion Manager, Open the Idenity provider and select the Credential Provisioning integration you just updated in the Link Integration picker and select the desired data plane and click Save
     ![Imgur](https://i.imgur.com/n4XEvGD.png)
     ![Imgur](https://i.imgur.com/xngYFy7.png)
 
@@ -46,7 +46,7 @@ Instructions
 
 * When you activate your API it will be discovered in Engage and you can create product based on it
 
-* When Engage users discover the product and associated API, they can subscribe and register an application. Then when the user requests a credential, the client provisioning integration will trigger and the credentials sent to Engage for the user to use the OAuth 2.0 Fusion API
+* When Engage users discover the product and associated API, they can subscribe and register an application. Then when the user requests a credential, the credential provisioning integration will trigger and the credentials sent to Engage for the user to use the OAuth 2.0 Fusion API
 
   ![Imgur](https://i.imgur.com/VZ17n5G.png)
   ![Imgur](https://i.imgur.com/icUelld.png)
