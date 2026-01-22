@@ -1,6 +1,8 @@
 # Amplify Fusion/Engage OAuth 2.0 Client Provisioning For Keycloak
 
-This Amplify Fusion project contains an integration and associated connector that handles Amplify Engage client provisioning (credential) requests and enables self service onboarding of Engage users for Fusion OAuth 2.0 secured API's. The integration leverages Keycloak's dynamic client registration (DCR) capabilities.
+This Amplify Fusion project contains an integration and associated connector that handle Amplify Engage client-provisioning requests. It enables self-service onboarding for Engage subscribers consuming OAuth 2.0-secured APIs managed by Fusion, allowing them to retrieve their OAuth 2.0 credentials without manual administrator involvement.
+
+The integration leverages Keycloak’s Dynamic Client Registration (DCR) capabilities to automatically create and configure OAuth clients at subscription time.
 
 You should have access to your Keycloak tenant and you should have Fusion integrated with Engage as described [here](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_marketplace/index.html).
 
