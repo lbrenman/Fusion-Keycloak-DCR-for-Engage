@@ -59,6 +59,8 @@ Instructions
 
   Authorization Flow
 
+  > Note that if you are logged into Keycloak, logout first or you will not be directed to login in Keycloak during the Authorization flow
+
   ![Imgur](https://i.imgur.com/dbEhAyn.png)
   ![Imgur](https://i.imgur.com/vxFpSjd.png)
   ![Imgur](https://i.imgur.com/25PPOfX.png)
