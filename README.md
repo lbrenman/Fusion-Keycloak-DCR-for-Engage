@@ -25,8 +25,14 @@ Instructions
   ![Imgur](https://imgur.com/Kzhsbz8.png)
   ![Imgur](https://imgur.com/YicvVTg.png)
 
-* Link the integration to your Identity Provider in Fusion -> Manager Identity Provider
-  ![Imgur](https://imgur.com/xngYFy7.png)
+* Link the integration to your Identity Provider in Fusion -> Manager Identity Provider as follows:
+  * Open the Client Provisioning integration, `cred-prov-flow-keycloak` in the imported project
+  * Click the CLient Provision trigger artifact and select your Identity Provider and click Save
+    ![Imgur](https://imgur.com/BTRpL7u.png)
+    ![Imgur](https://imgur.com/zbSBI16.png)
+  *In Fusion Manager, Open the Idenity provider and select the Client Provisioning integration you just updated in the Link Integration picker and select the desired data plane amd click Save
+    ![Imgur](https://imgur.com/dpQuSmh.png)
+    ![Imgur](https://imgur.com/xngYFy7.png)
 
 * Now you can select OAuth 2.0 for any of your Fusion APIs and create a Governance Rule that uses the Identity Provider and activate your API
 
