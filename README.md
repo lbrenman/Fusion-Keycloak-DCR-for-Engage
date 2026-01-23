@@ -33,7 +33,8 @@ Instructions
   * Click the Credential Provision trigger artifact and select your Identity Provider and click Save
     ![Imgur](https://i.imgur.com/BTRpL7u.png)
     ![Imgur](https://i.imgur.com/zbSBI16.png)
-  * In Fusion Manager, Open the Idenity provider and select the Credential Provisioning integration you just updated in the Link Integration picker and select the desired data plane and click Save
+    > Note that if you get an error selecting your Identity provider you can delete the Credential Provisioning component and re-add it and then select the Identity provider
+  * In Fusion Manager, Open the Identity provider and select the Credential Provisioning integration you just updated in the Link Integration picker and select the desired data plane and click Save
     ![Imgur](https://i.imgur.com/n4XEvGD.png)
     ![Imgur](https://i.imgur.com/xngYFy7.png)
 
