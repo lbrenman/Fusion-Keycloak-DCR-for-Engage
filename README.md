@@ -15,12 +15,9 @@ For testing you can reference these documents:
 Instructions
 * [Import](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_the_environments/index.html#export-or-import-a-project) the project zip file into your tenant
 
-* Edit the Keycloak API connector in the project or [Override](https://docs.axway.com/bundle/amplify_integration/page/docs/designer_module/designer_module_artifacts/connections/index.html#configure-an-override-connection) the Keycloak API connector in Manager and enter the appropriate values for your Keycloak tenant and service account client, namely your realm url, your realm token url and the client id and secret of a service account client
-
-  ![Imgur](https://i.imgur.com/W0AlWTy.png)
-  ![Imgur](https://i.imgur.com/DUAi6rJ.png)
-  ![Imgur](https://i.imgur.com/fBta2tm.png)
-  ![Imgur](https://i.imgur.com/qRdbj1D.png)
+* Edit the Keycloak API connector in the project (or [override](https://docs.axway.com/bundle/amplify_integration/page/docs/designer_module/designer_module_artifacts/connections/index.html#configure-an-override-connection) the Keycloak API connector in Manager) and enter the appropriate values for your Keycloak tenant and service account client, namely your realm url, your realm token url and the client id and secret of a service account client
+  ![Imgur](https://i.imgur.com/vVmfLZ3.png)
+  ![Imgur](https://i.imgur.com/lRtjjGV.png)
 
 * The service account client should have a realm-management -> manage-clients service account role added to it in order to create clients
   ![Imgur](https://i.imgur.com/SoerZOj.png)
