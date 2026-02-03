@@ -16,10 +16,12 @@ Instructions
 * [Import](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_the_environments/index.html#export-or-import-a-project) the project zip file into your tenant
 
 * Edit the Keycloak API connector in the project (or [override](https://docs.axway.com/bundle/amplify_integration/page/docs/designer_module/designer_module_artifacts/connections/index.html#configure-an-override-connection) the Keycloak API connector in Manager) and enter the appropriate values for your Keycloak tenant and service account client, namely your realm url, your realm token url and the client id and secret of a service account client
+
   ![Imgur](https://i.imgur.com/vVmfLZ3.png)
   ![Imgur](https://i.imgur.com/lRtjjGV.png)
 
 * The service account client should have a realm-management -> manage-clients service account role added to it in order to create clients
+
   ![Imgur](https://i.imgur.com/SoerZOj.png)
   ![Imgur](https://i.imgur.com/SyINPA3.png)
   ![Imgur](https://i.imgur.com/Kzhsbz8.png)
@@ -28,10 +30,12 @@ Instructions
 * Link the integration to your Identity Provider in Fusion -> Manager Identity Provider as follows:
   * Open the Credential Provisioning integration, `cred-prov-flow-keycloak` in the imported project
   * Click the Credential Provision trigger artifact and select your Identity Provider and click Save
+
     ![Imgur](https://i.imgur.com/BTRpL7u.png)
     ![Imgur](https://i.imgur.com/zbSBI16.png)
     > Note that if you get an error selecting your Identity provider you can delete the Credential Provisioning component and re-add it and then select the Identity provider
   * In Fusion Manager, Open the Identity provider and select the Credential Provisioning integration you just updated in the Link Integration picker and select the desired data plane and click Save
+
     ![Imgur](https://i.imgur.com/n4XEvGD.png)
     ![Imgur](https://i.imgur.com/xngYFy7.png)
 
