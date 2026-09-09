@@ -8,11 +8,18 @@ It is provided as an example of an Keycloak Credential Provisioning flow for Fus
 
 You should have access to your Keycloak tenant and you should have Fusion integrated with Engage as described [here](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_marketplace/index.html).
 
-You should also validate that you can call your API with Keycloak OAuth 2.0 from Postman using a manually created keycloak test client and that client id is added to a Fusion Test App in Manager.
+Before testing DCR, you should first validate that you can call your Fusion API with Keycloak OAuth 2.0 from Postman using a manually created keycloak test client.
 
 For testing you can reference these documents:
 * [Amplify Integration - Use PhaseTwo Managed Keycloak for OAuth API Authentication](https://gist.github.com/lbrenman/69317b109e0db85771ae29a2fab890c8)
 * [Keycloak Development Environment](https://github.com/lbrenman/keycloak-dev-codespace)
+
+The DCR flow supports the following flows requests:
+* client credentials only
+* auth code with PKCE only
+* client credentials and auth code with PKCE
+
+The password flow type is not supported as it [deprecated](https://oauth.net/2/grant-types/password/).
 
 Instructions
 * [Import](https://docs.axway.com/bundle/amplify_integration/page/docs/manager_module/manage_the_environments/index.html#export-or-import-a-project) the project zip file into your tenant
@@ -28,6 +35,8 @@ Instructions
   ![Imgur](https://i.imgur.com/SyINPA3.png)
   ![Imgur](https://i.imgur.com/Kzhsbz8.png)
   ![Imgur](https://i.imgur.com/YicvVTg.png)
+
+  > Note: The built in keycloak admin-api client can be used for this
 
 * Link the integration to your Identity Provider in Fusion -> Manager Identity Provider as follows:
   * Open the Credential Provisioning integration, `cred-prov-flow-keycloak` in the imported project
